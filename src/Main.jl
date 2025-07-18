@@ -15,8 +15,5 @@ function arnoldi_experiment()
     for _ in 1:1e5
         step!(aggregation)
     end
-
-    algo = arnoldi_with_π_dynamic(ε, measure_sizes)
-    aggregation = ArnoldiAggregation(P, p_0, algo)
 end
 arnoldi_experiment()
